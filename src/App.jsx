@@ -3,6 +3,8 @@ import Card from './Card';
 import styled from 'styled-components';
 import { useState, useEffect } from 'react';
 import cardData from './cards.json';
+import { DndProvider } from 'react-dnd';
+import { HTML5Backend } from 'react-dnd-html5-backend';
 
 
 const StyledValue = styled.span`
@@ -94,12 +96,12 @@ const App = () => {
         
       </section>
       <main className="App-main">
-        { cards.map( card => 
-            <Card key={card.id} numInHand={numInHand} updateNumCards={updateNumCards} {...card} />
-        )}
-        
+        <DndProvider backend={HTML5Backend}>
+          { cards.map( card => 
+              <Card key={card.id} numInHand={numInHand} updateNumCards={updateNumCards} {...card} />
+          )}
+        </DndProvider>
       </main>
-      
     </div>
   );
 }

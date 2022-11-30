@@ -1,8 +1,15 @@
-import { useState } from "react";
+import { useDrag } from 'react-dnd';
+import { ItemTypes } from './ItemTypes';
 
 
 const Card = ({ numInHand, updateNumCards, id, image, max }) => {
   
+  const [ {isDragging}, drag ] = useDrag( () => ({
+    type: ItemTypes.CARD,
+    collect: monitor => ({
+      isDragging: !!monitor.isDragging()
+    })
+  }))
 
   const handleSelect = (e) => {
     const numCards = parseInt(e.target.value, 10);
@@ -21,7 +28,11 @@ const Card = ({ numInHand, updateNumCards, id, image, max }) => {
   }
 
   return(
-    <div className="Card">
+    <div className="Card"
+      ref={drag}
+      style={{
+        opacity: isDragging ? 0.5 : 1
+      }}>
       <img alt="card" src={image} style={{ marginBottom: '10px' }} />
       <select value={numInHand[id]} id={id} onChange={handleSelect}>
         { buildOptions() }
