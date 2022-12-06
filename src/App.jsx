@@ -1,5 +1,6 @@
 import './App.css';
 import Card from './Card';
+import Hand from './Hand';
 import styled from 'styled-components';
 import { useState, useEffect } from 'react';
 import cardData from './cards.json';
@@ -79,6 +80,10 @@ const App = () => {
     <div className="App">
       <header className="App-header">
         <h3>Advanced Civilization Trade Card Calculator</h3>
+        <div>
+          <Hand />
+          <Hand />
+        </div>
         <div>
           <span>Current Hand Value:</span>
           <StyledValue>${value}</StyledValue>
