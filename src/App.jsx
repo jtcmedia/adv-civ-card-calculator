@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import cardData from './cards.json';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
+import Hand from './Hand';
 
 
 const StyledValue = styled.span`
@@ -25,6 +26,10 @@ const StyledButton = styled.button`
   margin: 20px;
   background-color: #1a1a1a;
   color: rgba(255, 255, 255, 0.87);
+`;
+
+const StyledImg = styled.img`
+  margin: 10px;
 `;
 
 
@@ -94,6 +99,24 @@ const App = () => {
           <StyledValue>${orgVal}</StyledValue>
         </div>
       </header>
+      <header className="App-subheader"><h3 style={{ marginRight: '5px'}}>Current Hand</h3><h3>Hand After Trade</h3></header>
+      <section className="App-hands">
+        <img style={{ margin: '20px', border: '3px solid white' }}
+          src="https://via.placeholder.com/350x200/373737?text=Place+cards+here"
+        />
+        <img style={{ margin: '20px', border: '3px solid white' }}
+          src="https://via.placeholder.com/350x200/373737?text=Place+cards+here"
+        /> 
+      </section>
+      <span>Current Hand Value:</span>
+      <StyledValue>${value}</StyledValue>
+      <StyledButton onClick={handleCopyButton}>
+          Copy Over Value =&gt;
+      </StyledButton>
+      <span>Original Hand Value:</span>
+      <StyledValue>${orgVal}</StyledValue>
+     
+
       <section className="App-buttons">
         <StyledButton onClick={handleResetButton}>
             Reset Hand
