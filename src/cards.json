@@ -3,15 +3,17 @@
     { "id": 0, "resource": "ochre", "image": "adv-civ-card-images/ochre.png", "value": 1, "max": 8 },
     { "id": 1, "resource": "hides", "image": "adv-civ-card-images/hides.png", "value": 1, "max": 7 },
     { "id": 2, "resource": "iron", "image": "adv-civ-card-images/iron.png", "value": 2, "max": 8 },
-    { "id": 3, "resource": "salt", "image": "adv-civ-card-images/salt.png", "value": 3, "max": 9 },
-    { "id": 4, "resource": "timber", "image": "adv-civ-card-images/timber.png", "value": 3, "max": 8 },
-    { "id": 5, "resource": "grain", "image": "adv-civ-card-images/grain.png", "value": 4, "max": 8 },
-    { "id": 6, "resource": "oil", "image": "adv-civ-card-images/oil.png", "value": 4, "max": 7 },
-    { "id": 7, "resource": "cloth", "image": "adv-civ-card-images/cloth.png", "value": 5, "max": 7 },
-    { "id": 8, "resource": "wine", "image": "adv-civ-card-images/wine.png", "value": 5, "max": 6 },
-    { "id": 9, "resource": "bronze", "image": "adv-civ-card-images/bronze.png", "value": 6, "max": 6 },
-    { "id": 10, "resource": "spice", "image": "adv-civ-card-images/spice.png", "value": 7, "max": 6 },
-    { "id": 11, "resource": "gems", "image": "adv-civ-card-images/gems.png", "value": 8, "max": 5 },
-    { "id": 12, "resource": "gold", "image": "adv-civ-card-images/gold.png", "value": 9, "max": 5 }
+    { "id": 3, "resource": "papyrus", "image": "adv-civ-card-images/papyrus.png", "value": 2, "max": 7 },
+    { "id": 4, "resource": "salt", "image": "adv-civ-card-images/salt.png", "value": 3, "max": 9 },
+    { "id": 5, "resource": "timber", "image": "adv-civ-card-images/timber.png", "value": 3, "max": 8 },
+    { "id": 6, "resource": "grain", "image": "adv-civ-card-images/grain.png", "value": 4, "max": 8 },
+    { "id": 7, "resource": "oil", "image": "adv-civ-card-images/oil.png", "value": 4, "max": 7 },
+    { "id": 8, "resource": "cloth", "image": "adv-civ-card-images/cloth.png", "value": 5, "max": 7 },
+    { "id": 9, "resource": "wine", "image": "adv-civ-card-images/wine.png", "value": 5, "max": 6 },
+    { "id": 10, "resource": "bronze", "image": "adv-civ-card-images/bronze.png", "value": 6, "max": 6 },
+    { "id": 11, "resource": "spice", "image": "adv-civ-card-images/spice.png", "value": 7, "max": 6 },
+    { "id": 12, "resource": "gems", "image": "adv-civ-card-images/gems.png", "value": 8, "max": 5 },
+    { "id": 13, "resource": "dye", "image": "adv-civ-card-images/dye.png", "value": 8, "max": 4 },
+    { "id": 14, "resource": "gold", "image": "adv-civ-card-images/gold.png", "value": 9, "max": 5 }
   ]
 }
