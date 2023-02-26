@@ -32,9 +32,12 @@ const App = () => {
   const [ value, setValue ] = useState(0);
   const [ orgVal, setOrgVal ] = useState(0);
 
-  const [ numInHand, setNumInHand ] = useState([ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]);
-  // 0: ochre, 1: hides, 2: iron, 3: papyrus, 4: salt, 5: timber, 6: grain, 7: oil
-  // 8: cloth, 9: wine, 10: bronze, 11: spice, 12: gems, 13: dye, 14: gold 
+  const [ numInHand, setNumInHand ] = useState(
+    // 0: hides, 1: ochre, 2: iron, 3: papyrus, 4: salt, 5: timber, 6: grain, 7: oil
+    // 8: cloth, 9: wine, 10: bronze, 11: spice, 12: resin, 13: gems, 14: dye, 15: gold 
+    new Array(cards.length).fill(0)
+  );
+  
 
   useEffect( () => {
     console.log('useEffect in App executed!');
