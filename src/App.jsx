@@ -33,8 +33,8 @@ const App = () => {
   const [ orgVal, setOrgVal ] = useState(0);
 
   const [ numInHand, setNumInHand ] = useState(
-    // 0: hides, 1: ochre, 2: iron, 3: papyrus, 4: salt, 5: timber, 6: grain, 7: oil
-    // 8: cloth, 9: wine, 10: bronze, 11: spice, 12: resin, 13: gems, 14: dye, 15: gold 
+    // 0: hides, 1: ochre, 2: iron, 3: papyrus, 4: salt, 5: timber, 6: grain, 7: oil, 8: cloth
+    // 9: wine, 10: bronze, 11: silver, 12: spice, 13: resin, 14: gems, 15: dye, 16: gold 
     new Array(cards.length).fill(0)
   );
   
