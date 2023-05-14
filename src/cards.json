@@ -16,6 +16,7 @@
     { "id": 13, "resource": "resin", "image": "adv-civ-card-images/resin.png", "value": 7, "max": 5 },
     { "id": 14, "resource": "gems", "image": "adv-civ-card-images/gems.png", "value": 8, "max": 5 },
     { "id": 15, "resource": "dye", "image": "adv-civ-card-images/dye.png", "value": 8, "max": 4 },
-    { "id": 16, "resource": "gold", "image": "adv-civ-card-images/gold.png", "value": 9, "max": 5 }
+    { "id": 16, "resource": "gold", "image": "adv-civ-card-images/gold.png", "value": 9, "max": 5 },
+    { "id": 17, "resource": "ivory", "image": "adv-civ-card-images/ivory.png", "value": 9, "max": 4 }
   ]
 }
